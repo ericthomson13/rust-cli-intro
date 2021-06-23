@@ -9,6 +9,7 @@ fn main() -> Result<(), Box<dyn Error>> {
       println!("Recieved signal {:?}", sig);
     }
   });
+  /// Does the work and waits 2s before exiting out
   thread::sleep(Duration::from_secs(2));
   Ok(())
 }
